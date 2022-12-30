@@ -1,0 +1,2497 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/DraswapV3Factory.sol": {
+      "lastModificationDate": 1672301342996,
+      "contentHash": "9bfd503a22f80148ebf83ee9b6a69079",
+      "sourceName": "contracts/DraswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IDraswapV3Factory.sol",
+        "./DraswapV3PoolDeployer.sol",
+        "./NoDelegateCall.sol",
+        "./DraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DraswapV3Factory"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/IDraswapV3Factory.sol": {
+      "lastModificationDate": 1672301343088,
+      "contentHash": "ea4fa4cab161ede9b6b58dcf6aad30ee",
+      "sourceName": "contracts/interfaces/IDraswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3Factory"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/DraswapV3PoolDeployer.sol": {
+      "lastModificationDate": 1672301343051,
+      "contentHash": "6bef8d6e6d654190a684f5ab0cd64e36",
+      "sourceName": "contracts/DraswapV3PoolDeployer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IDraswapV3PoolDeployer.sol",
+        "./DraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DraswapV3PoolDeployer"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/NoDelegateCall.sol": {
+      "lastModificationDate": 1672301343049,
+      "contentHash": "1dc104024db4c816655436643eb1c9eb",
+      "sourceName": "contracts/NoDelegateCall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NoDelegateCall"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/DraswapV3Pool.sol": {
+      "lastModificationDate": 1672301342993,
+      "contentHash": "632dc32f291d42df21354a3bd9f03fb7",
+      "sourceName": "contracts/DraswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IDraswapV3Pool.sol",
+        "./NoDelegateCall.sol",
+        "./libraries/LowGasSafeMath.sol",
+        "./libraries/SafeCast.sol",
+        "./libraries/Tick.sol",
+        "./libraries/TickBitmap.sol",
+        "./libraries/Position.sol",
+        "./libraries/Oracle.sol",
+        "./libraries/FullMath.sol",
+        "./libraries/FixedPoint128.sol",
+        "./libraries/TransferHelper.sol",
+        "./libraries/TickMath.sol",
+        "./libraries/LiquidityMath.sol",
+        "./libraries/SqrtPriceMath.sol",
+        "./libraries/SwapMath.sol",
+        "./interfaces/IDraswapV3PoolDeployer.sol",
+        "./interfaces/IDraswapV3Factory.sol",
+        "./interfaces/IERC20Minimal.sol",
+        "./interfaces/callback/IDraswapV3MintCallback.sol",
+        "./interfaces/callback/IDraswapV3SwapCallback.sol",
+        "./interfaces/callback/IDraswapV3FlashCallback.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DraswapV3Pool"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/IDraswapV3PoolDeployer.sol": {
+      "lastModificationDate": 1672301343057,
+      "contentHash": "5576eb768024757f5e1f3ca0c10c07ac",
+      "sourceName": "contracts/interfaces/IDraswapV3PoolDeployer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolDeployer"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/IDraswapV3Pool.sol": {
+      "lastModificationDate": 1672301343059,
+      "contentHash": "2b87c391fed5f7fdf5b12c63529cc5c2",
+      "sourceName": "contracts/interfaces/IDraswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./pool/IDraswapV3PoolImmutables.sol",
+        "./pool/IDraswapV3PoolState.sol",
+        "./pool/IDraswapV3PoolDerivedState.sol",
+        "./pool/IDraswapV3PoolActions.sol",
+        "./pool/IDraswapV3PoolOwnerActions.sol",
+        "./pool/IDraswapV3PoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3Pool"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/LowGasSafeMath.sol": {
+      "lastModificationDate": 1672301343013,
+      "contentHash": "ff4d506a22d90b314ab325b437ff7729",
+      "sourceName": "contracts/libraries/LowGasSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "LowGasSafeMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/SafeCast.sol": {
+      "lastModificationDate": 1672301343034,
+      "contentHash": "c89128b97d009587db99cae7763cfef0",
+      "sourceName": "contracts/libraries/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/Tick.sol": {
+      "lastModificationDate": 1672301343009,
+      "contentHash": "676260aa31ccdb40c282db65bc4f96d2",
+      "sourceName": "contracts/libraries/Tick.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LowGasSafeMath.sol",
+        "./SafeCast.sol",
+        "./TickMath.sol",
+        "./LiquidityMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Tick"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/TickBitmap.sol": {
+      "lastModificationDate": 1672301343005,
+      "contentHash": "a37b6629ee910c5581d86fce2d412c02",
+      "sourceName": "contracts/libraries/TickBitmap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickBitmap"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/Position.sol": {
+      "lastModificationDate": 1672301343000,
+      "contentHash": "2ec457aa28067155e2c56ebaf698ae4e",
+      "sourceName": "contracts/libraries/Position.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./FixedPoint128.sol",
+        "./LiquidityMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Position"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/Oracle.sol": {
+      "lastModificationDate": 1672301343017,
+      "contentHash": "5e21c7429316d8544eb640a116f9e83d",
+      "sourceName": "contracts/libraries/Oracle.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1672301343032,
+      "contentHash": "c3f03759b6500f54f402f1963af1c256",
+      "sourceName": "contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/FixedPoint128.sol": {
+      "lastModificationDate": 1672301343024,
+      "contentHash": "1298041826d8bf2a444d660fc3b6aebd",
+      "sourceName": "contracts/libraries/FixedPoint128.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint128"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1672301343030,
+      "contentHash": "080372e204093760a29cfcd9e1fcc3df",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20Minimal.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/TickMath.sol": {
+      "lastModificationDate": 1672301343021,
+      "contentHash": "6bd9ce5056f36b9763627bce69998c83",
+      "sourceName": "contracts/libraries/TickMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/LiquidityMath.sol": {
+      "lastModificationDate": 1672301343003,
+      "contentHash": "b0a53c2998a11247a3d091e573acdff0",
+      "sourceName": "contracts/libraries/LiquidityMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/SqrtPriceMath.sol": {
+      "lastModificationDate": 1672301343027,
+      "contentHash": "8ddff94ca2d6b80e75fee6d20683d8b7",
+      "sourceName": "contracts/libraries/SqrtPriceMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LowGasSafeMath.sol",
+        "./SafeCast.sol",
+        "./FullMath.sol",
+        "./UnsafeMath.sol",
+        "./FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SqrtPriceMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/SwapMath.sol": {
+      "lastModificationDate": 1672301343046,
+      "contentHash": "b369a4160030783926cd633898f4462c",
+      "sourceName": "contracts/libraries/SwapMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./SqrtPriceMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SwapMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/IERC20Minimal.sol": {
+      "lastModificationDate": 1672301343061,
+      "contentHash": "0d04abd7a003dd8fa4993ee555aaa2d2",
+      "sourceName": "contracts/interfaces/IERC20Minimal.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20Minimal"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/callback/IDraswapV3MintCallback.sol": {
+      "lastModificationDate": 1672301343067,
+      "contentHash": "d575b9af0c9469ccb28e7cf8ed1658df",
+      "sourceName": "contracts/interfaces/callback/IDraswapV3MintCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3MintCallback"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/callback/IDraswapV3SwapCallback.sol": {
+      "lastModificationDate": 1672301343069,
+      "contentHash": "19e2906d42560cb6e1c42467d0b448fa",
+      "sourceName": "contracts/interfaces/callback/IDraswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3SwapCallback"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/callback/IDraswapV3FlashCallback.sol": {
+      "lastModificationDate": 1672301343065,
+      "contentHash": "c054861a8598046b9b1a4091d15e2d3c",
+      "sourceName": "contracts/interfaces/callback/IDraswapV3FlashCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3FlashCallback"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolImmutables.sol": {
+      "lastModificationDate": 1672301343084,
+      "contentHash": "ac10398fa5703d61adaa1426f91ea0dd",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolImmutables"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolState.sol": {
+      "lastModificationDate": 1672301343075,
+      "contentHash": "7c20d5c3324febd95e0100e849be845c",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolState"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolDerivedState.sol": {
+      "lastModificationDate": 1672301343072,
+      "contentHash": "d8239d97f97a8d5b3e451734f475e9ba",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolDerivedState"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolActions.sol": {
+      "lastModificationDate": 1672301343079,
+      "contentHash": "373498820d2b9b3d01e4bdc7314c38c9",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolActions"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolOwnerActions.sol": {
+      "lastModificationDate": 1672301343082,
+      "contentHash": "83f89b71f5c37c0425e20581d23190ce",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolOwnerActions"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/interfaces/pool/IDraswapV3PoolEvents.sol": {
+      "lastModificationDate": 1672301343086,
+      "contentHash": "070787081495a6e08c1910c6e30dcd4a",
+      "sourceName": "contracts/interfaces/pool/IDraswapV3PoolEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IDraswapV3PoolEvents"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1672301343011,
+      "contentHash": "81e58372a134f05eb1a211a1efef8a1e",
+      "sourceName": "contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/UnsafeMath.sol": {
+      "lastModificationDate": 1672301343044,
+      "contentHash": "c2d88847ec7741938f1cecdfc808ee3b",
+      "sourceName": "contracts/libraries/UnsafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UnsafeMath"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/libraries/FixedPoint96.sol": {
+      "lastModificationDate": 1672301343041,
+      "contentHash": "f3ab03d6bbfd7c6834ecd3fc311cb0e7",
+      "sourceName": "contracts/libraries/FixedPoint96.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint96"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/MockTimeDraswapV3Pool.sol": {
+      "lastModificationDate": 1672301342940,
+      "contentHash": "463ed4129952b21086bfab0f854816f9",
+      "sourceName": "contracts/test/MockTimeDraswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../DraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockTimeDraswapV3Pool"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/MockTimeDraswapV3PoolDeployer.sol": {
+      "lastModificationDate": 1672301342935,
+      "contentHash": "061e25be6dc8f8427e19e881f2d3bb9f",
+      "sourceName": "contracts/test/MockTimeDraswapV3PoolDeployer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IDraswapV3PoolDeployer.sol",
+        "./MockTimeDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockTimeDraswapV3PoolDeployer"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TestDraswapV3Callee.sol": {
+      "lastModificationDate": 1672301342945,
+      "contentHash": "f1cbc40fdc9959e50561084353e98a50",
+      "sourceName": "contracts/test/TestDraswapV3Callee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20Minimal.sol",
+        "../libraries/SafeCast.sol",
+        "../libraries/TickMath.sol",
+        "../interfaces/callback/IDraswapV3MintCallback.sol",
+        "../interfaces/callback/IDraswapV3SwapCallback.sol",
+        "../interfaces/callback/IDraswapV3FlashCallback.sol",
+        "../interfaces/IDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestDraswapV3Callee"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TestDraswapV3SwapPay.sol": {
+      "lastModificationDate": 1672301342932,
+      "contentHash": "98754d00e3db30ed2b78b9a715522f10",
+      "sourceName": "contracts/test/TestDraswapV3SwapPay.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20Minimal.sol",
+        "../interfaces/callback/IDraswapV3SwapCallback.sol",
+        "../interfaces/IDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestDraswapV3SwapPay"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TestDraswapV3Router.sol": {
+      "lastModificationDate": 1672301342991,
+      "contentHash": "7b0e3255e1c0bf941cd17a3f00ed5d67",
+      "sourceName": "contracts/test/TestDraswapV3Router.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeCast.sol",
+        "../libraries/TickMath.sol",
+        "../interfaces/IERC20Minimal.sol",
+        "../interfaces/callback/IDraswapV3SwapCallback.sol",
+        "../interfaces/IDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestDraswapV3Router"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TestERC20.sol": {
+      "lastModificationDate": 1672301342986,
+      "contentHash": "bd0f41dd7f4fa26b694d8426dbea5028",
+      "sourceName": "contracts/test/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20Minimal.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/DraswapV3PoolSwapTest.sol": {
+      "lastModificationDate": 1672301342981,
+      "contentHash": "5d4a88db809e6b8600926d6a0fd80e22",
+      "sourceName": "contracts/test/DraswapV3PoolSwapTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20Minimal.sol",
+        "../interfaces/callback/IDraswapV3SwapCallback.sol",
+        "../interfaces/IDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "DraswapV3PoolSwapTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickMathTest.sol": {
+      "lastModificationDate": 1672301342964,
+      "contentHash": "e6019d8fead30f87e9a5059912f31540",
+      "sourceName": "contracts/test/TickMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TickMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342966,
+      "contentHash": "b1f158ef94cc1bbb9ea927e319897201",
+      "sourceName": "contracts/test/TickMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TickMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TestDraswapV3ReentrantCallee.sol": {
+      "lastModificationDate": 1672301342977,
+      "contentHash": "3e310c9dcbbbb65600f2760ba57e4802",
+      "sourceName": "contracts/test/TestDraswapV3ReentrantCallee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TickMath.sol",
+        "../interfaces/callback/IDraswapV3SwapCallback.sol",
+        "../interfaces/IDraswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestDraswapV3ReentrantCallee"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickTest.sol": {
+      "lastModificationDate": 1672301342972,
+      "contentHash": "2f1df53098390eebc8e01afe28acf2ce",
+      "sourceName": "contracts/test/TickTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Tick.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickOverflowSafetyEchidnaTest.sol": {
+      "lastModificationDate": 1672301342943,
+      "contentHash": "9e5a7ab9b3993eee882c4df336d353ea",
+      "sourceName": "contracts/test/TickOverflowSafetyEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Tick.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickOverflowSafetyEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickEchidnaTest.sol": {
+      "lastModificationDate": 1672301342969,
+      "contentHash": "b4256d8f48d9ef57e47d5fbdb25417f4",
+      "sourceName": "contracts/test/TickEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Tick.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/LiquidityMathTest.sol": {
+      "lastModificationDate": 1672301342952,
+      "contentHash": "f2d372c1c941ee749ed186db1d9cdda8",
+      "sourceName": "contracts/test/LiquidityMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/LiquidityMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "LiquidityMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/SqrtPriceMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342957,
+      "contentHash": "8951fd1c4cb39638614542bda8edad1f",
+      "sourceName": "contracts/test/SqrtPriceMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FullMath.sol",
+        "../libraries/SqrtPriceMath.sol",
+        "../libraries/FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SqrtPriceMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/SqrtPriceMathTest.sol": {
+      "lastModificationDate": 1672301342926,
+      "contentHash": "13dac0aa00b96cfc798d2d2afb609a3a",
+      "sourceName": "contracts/test/SqrtPriceMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SqrtPriceMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SqrtPriceMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/SwapMathTest.sol": {
+      "lastModificationDate": 1672301342962,
+      "contentHash": "ae1002ffaea3c1dd6897fc91b342e557",
+      "sourceName": "contracts/test/SwapMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SwapMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SwapMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/SwapMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342979,
+      "contentHash": "ac0d2bc447a6cbe55ff4982f208ec8b2",
+      "sourceName": "contracts/test/SwapMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SwapMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SwapMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/UnsafeMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342974,
+      "contentHash": "09d9dee74647308829ec3e68a812c3c5",
+      "sourceName": "contracts/test/UnsafeMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/UnsafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "UnsafeMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/LowGasSafeMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342984,
+      "contentHash": "5cc7256516f09bc74a6367dddd424282",
+      "sourceName": "contracts/test/LowGasSafeMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/LowGasSafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "LowGasSafeMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/FullMathTest.sol": {
+      "lastModificationDate": 1672301342954,
+      "contentHash": "8cb3875ff9e8528848cac4d506bd06b1",
+      "sourceName": "contracts/test/FullMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FullMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "FullMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/FullMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342950,
+      "contentHash": "1c76c74e2f5b31de68e6546a31992d37",
+      "sourceName": "contracts/test/FullMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/FullMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "FullMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/OracleTest.sol": {
+      "lastModificationDate": 1672301342937,
+      "contentHash": "43f5eaaf71ab1dd0c85e64adbd72f0fe",
+      "sourceName": "contracts/test/OracleTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Oracle.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/OracleEchidnaTest.sol": {
+      "lastModificationDate": 1672301342930,
+      "contentHash": "562230d2c02ffb588898db9a2fdaa8da",
+      "sourceName": "contracts/test/OracleEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OracleTest.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickBitmapTest.sol": {
+      "lastModificationDate": 1672301342928,
+      "contentHash": "2662ec90b36251bac7cb764e5406a7cb",
+      "sourceName": "contracts/test/TickBitmapTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TickBitmap.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickBitmapTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/TickBitmapEchidnaTest.sol": {
+      "lastModificationDate": 1672301342959,
+      "contentHash": "ec15cdb3ad8e287ed1651a865ba41038",
+      "sourceName": "contracts/test/TickBitmapEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/TickBitmap.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TickBitmapEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/BitMathTest.sol": {
+      "lastModificationDate": 1672301342989,
+      "contentHash": "229d51358549610acb79e004dca5eb61",
+      "sourceName": "contracts/test/BitMathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/BitMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "BitMathTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/BitMathEchidnaTest.sol": {
+      "lastModificationDate": 1672301342947,
+      "contentHash": "50499a67421587a2f0aaf800d68149f6",
+      "sourceName": "contracts/test/BitMathEchidnaTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/BitMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "BitMathEchidnaTest"
+      ]
+    },
+    "/Users/admin/Desktop/LocalDoc/Projects/draswap/v3-core/v3-core-v1.0.1/contracts/test/NoDelegateCallTest.sol": {
+      "lastModificationDate": 1672301342924,
+      "contentHash": "af533f586cb5773ca0722c8be5c9a0b5",
+      "sourceName": "contracts/test/NoDelegateCallTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NoDelegateCall.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NoDelegateCallTest"
+      ]
+    }
+  }
+}
